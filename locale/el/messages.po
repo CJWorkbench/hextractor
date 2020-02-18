@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-02-07 16:43+0000\n"
+"POT-Creation-Date: 2020-02-18 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: el\n"
@@ -20,16 +20,18 @@ msgstr ""
 "Generated-By: Babel 2.8.0\n"
 
 msgid "_spec.name"
-msgstr ""
+msgstr "Εξαγωγέας Hext"
 
 msgid "_spec.description"
-msgstr ""
+msgstr "Εξαγωγή δομημένων δεδομένων από σελίδες HTML."
 
 msgid "_spec.parameters.show_hext_template.name"
-msgstr ""
+msgstr "Επεξεργασία προτύπου"
 
 msgid "_spec.parameters.hext_template.placeholder"
 msgstr ""
+"Χρησιμοποιήστε το παράθυρο στα δεξιά για να επιλέξετε περιεχόμενο και να "
+"συμπληρώσετε αυτό το πεδίο."
 
 #: hextractor.py:69
 msgid "badParam.html_column_or_css_column.notSelected"
