@@ -2,6 +2,7 @@ import re
 import hext
 import pandas as pd
 from lxml.html.clean import Cleaner
+from cjwmodule import i18n
 
 
 def clean_html(html):
@@ -65,14 +66,21 @@ def render(table, params):
     has_template = True if template else False
 
     if not html_column or not css_column:
-        return "Select HTML & CSS source columns to extract data from."
+        return i18n.trans(
+            "badParam.html_column_or_css_column.notSelected",
+            "Select HTML & CSS source columns to extract data from."
+        )
 
     cols = table.columns
     if html_column not in cols or name_column not in cols:
-        return "You need to add the HTML scraper before this step."
+        return i18n.trans(
+            "badParam.html_column_or_name_column.notAvailable",
+            "You need to add the HTML scraper before this step."
+        )
 
     if not template:
-        err_msg = (
+        err_msg = i18n.trans(
+            "warning.useIframe",
             "Use the iframe on the right to select content to scrape."
         )
         # csss = table[css_column].tolist()
@@ -91,4 +99,3 @@ def render(table, params):
         table, template, html_column=html_column
     )
     return (new_table, '', {})
-

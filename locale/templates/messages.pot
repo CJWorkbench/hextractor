@@ -1,0 +1,31 @@
+#. default-message: Hext extractor
+msgid "_spec.name"
+msgstr ""
+
+#. default-message: Extract structured data from HTML pages.
+msgid "_spec.description"
+msgstr ""
+
+#. default-message: Edit template
+msgid "_spec.parameters.show_hext_template.name"
+msgstr ""
+
+#. default-message: Use the window on the right select to content and fill this field.
+msgid "_spec.parameters.hext_template.placeholder"
+msgstr ""
+
+#. default-message: Select HTML & CSS source columns to extract data from.
+#: hextractor.py:69
+msgid "badParam.html_column_or_css_column.notSelected"
+msgstr ""
+
+#. default-message: You need to add the HTML scraper before this step.
+#: hextractor.py:76
+msgid "badParam.html_column_or_name_column.notAvailable"
+msgstr ""
+
+#. default-message: Use the iframe on the right to select content to scrape.
+#: hextractor.py:82
+msgid "warning.useIframe"
+msgstr ""
+
